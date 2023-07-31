@@ -1,0 +1,76 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  display: flex;
+}
+
+.bot-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  max-width: 500px;
+  display: block;
+  color: #fff;
+  background-color: #007bff;
+
+  
+  
+}
+
+.bot-card img {
+  max-width: 100%;
+  background-color: #007bff;
+  
+}
+
+.bot-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.bot-card button:hover {
+  background-color: #0056b3;
+}
+
+
+h1{
+  align-items: center;
+  display: flex;
+  margin-left: 800px;
+  color: green;
+}
+
+body{
+  background-image: url(https://wallpaperaccess.com/full/519164.jpg);
+  max-width: fit-content;
+
+}
+
+h2{
+  margin-left: 900px;
+  color: #007bff;
+}
+
+.bot-collection{
+  display: grid;
+  margin-left: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.TOP{
+  font-size: larger;
+  margin-left: 940px;
+  color: red;
+}
+.ui-mini-red-button{
+  background-color: aqua;
+}
+
