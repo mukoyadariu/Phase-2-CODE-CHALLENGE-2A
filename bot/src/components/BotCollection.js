@@ -17,7 +17,7 @@ const BotCollection = ({ data, enlistedBots, onEnlist, onRemove, onShowSpecs, on
           enlisted={enlistedBots.some((enlistedBot) => enlistedBot.id === bot.id)}
           onEnlist={onEnlist}
           onRemove={onRemove}
-          onShowSpecs={onShowSpecs} // Make sure this prop is passed
+          onShowSpecs={onShowSpecs}
           onDischarge={onDischarge}
         />
       ))}

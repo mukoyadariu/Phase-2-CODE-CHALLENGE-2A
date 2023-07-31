@@ -4,7 +4,7 @@
   margin: 0px;
 }
 .App {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -82,7 +82,7 @@ h2{
 }
 
 .your-bot-army{
-  height: 70vh;
+  height: 120vh;
   width: 100vw;
   background-color:#007bff;
 }
@@ -105,5 +105,21 @@ h2{
   margin-left: 50px;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.h3{
+  color: white;
+}
+
+.moto{
+  background-color: #ccc;
+  align-items: center;
+  font-size: larger;
+}
+
+p{
+  font-size: larger;
+  font-weight: bolder;
+}
+
 
 
