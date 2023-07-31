@@ -1,19 +1,46 @@
-// Bot.js
 import React from 'react';
 
-const Bot = ({ bot, onEnlist }) => {
-  const { name, health, damage, armor, bot_class, catchphrase, avatar_url } = bot;
+const Bot = ({ bot, onEnlist, onRemove, onShowSpecs, onDischarge, enlisted }) => {
+  const handleEnlist = () => {
+    onEnlist(bot);
+  };
+
+  const handleShowSpecs = () => {
+    if (typeof onShowSpecs === 'function') {
+      onShowSpecs(bot);
+    }
+  };
+
+  const handleRemove = () => {
+    onRemove(bot.id);
+  };
+
+  const handleDischarge = () => {
+    onDischarge(bot.id);
+  };
 
   return (
     <div className="bot-card">
-      <img src={avatar_url} alt={name} />
-      <h3>{name}</h3>
-      <p>Health: {health}</p>
-      <p>Damage: {damage}</p>
-      <p>Armor: {armor}</p>
-      <p>Class: {bot_class}</p>
-      <p>Catchphrase: {catchphrase}</p>
-      {onEnlist && <button onClick={() => onEnlist(bot)}>Enlist</button>}
+      <img src={bot.avatar_url} alt={bot.name} />
+      <h3>{bot.name}</h3>
+      <p>Health: {bot.health}</p>
+      <p>Damage: {bot.damage}</p>
+      <p>Armor: {bot.armor}</p>
+      <p>Class: {bot.bot_class}</p>
+      <p>Catchphrase: {bot.catchphrase}</p>
+      {enlisted ? (
+        <div>
+          <button onClick={handleShowSpecs}>Show Specs</button>
+          <button onClick={handleRemove}>Remove</button>
+        </div>
+      ) : (
+        <div>
+          <button onClick={handleEnlist}>Enlist</button>
+          <button onClick={handleDischarge} style={{ color: 'red' }}>
+            X
+          </button>
+        </div>
+      )}
     </div>
   );
 };

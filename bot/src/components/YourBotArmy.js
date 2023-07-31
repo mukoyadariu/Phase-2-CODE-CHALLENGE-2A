@@ -1,6 +1,15 @@
 import React from 'react';
+import Bot from './Bot';
 
-const YourBotArmy = ({ enlistedBots = [], onDelete }) => {
+const YourBotArmy = ({ enlistedBots = [], onDelete, onDischarge }) => {
+  const handleDelete = (botId) => {
+    onDelete(botId);
+  };
+
+  const handleDischarge = (botId) => {
+    onDischarge(botId);
+  };
+
   return (
     <div className="your-bot-army">
       <h3>Your Bot Army</h3>
@@ -9,7 +18,7 @@ const YourBotArmy = ({ enlistedBots = [], onDelete }) => {
       ) : (
         enlistedBots.map((bot) => (
           <div key={bot.id} className="bot-card">
-            
+            <Bot bot={bot} onRemove={handleDelete} onDischarge={handleDischarge} enlisted />
           </div>
         ))
       )}

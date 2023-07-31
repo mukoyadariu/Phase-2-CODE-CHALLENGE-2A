@@ -1,3 +1,8 @@
+*{
+  padding: 0px;
+
+  margin: 0px;
+}
 .App {
   max-width: 800px;
   margin: 0 auto;
@@ -11,10 +16,10 @@
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
-  max-width: 500px;
+  max-width: 400px;
   display: block;
   color: #fff;
-  background-color: #007bff;
+  background-color:green;
 
   
   
@@ -45,7 +50,7 @@ h1{
   align-items: center;
   display: flex;
   margin-left: 800px;
-  color: green;
+  color: blue;
 }
 
 body{
@@ -55,8 +60,10 @@ body{
 }
 
 h2{
-  margin-left: 900px;
-  color: #007bff;
+  margin-left: 50px;
+  color: whitesmoke;
+  font-size: larger;
+  margin-top: 10px;
 }
 
 .bot-collection{
@@ -73,4 +80,30 @@ h2{
 .ui-mini-red-button{
   background-color: aqua;
 }
+
+.your-bot-army{
+  height: 70vh;
+  width: 100vw;
+  background-color:#007bff;
+}
+
+.sort-bar{
+  margin-left: 830px;
+  font-size: larger;
+  color: aqua;
+}
+
+/* App.css */
+.your-bot-army {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bot-card-container {
+  display: grid;
+  margin-left: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 
