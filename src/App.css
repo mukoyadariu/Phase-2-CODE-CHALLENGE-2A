@@ -1,0 +1,126 @@
+*{
+  padding: 0px;
+
+  margin: 0px;
+}
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  display: flex;
+}
+
+.bot-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+  display: block;
+  color: #fff;
+  background-color:green;
+
+  
+  
+}
+
+.bot-card img {
+  max-width: 100%;
+  background-color: #007bff;
+  
+}
+
+.bot-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.bot-card button:hover {
+  background-color: #0056b3;
+}
+
+
+h1{
+  align-items: center;
+  display: flex;
+  margin-left: 800px;
+  color: blue;
+}
+
+body{
+  background-image: url(https://wallpaperaccess.com/full/519164.jpg);
+  max-width: fit-content;
+
+}
+
+h2{
+  margin-left: 50px;
+  color: whitesmoke;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+.bot-collection{
+  display: grid;
+  margin-left: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.TOP{
+  font-size: larger;
+  margin-left: 940px;
+  color: red;
+}
+.ui-mini-red-button{
+  background-color: aqua;
+}
+
+.your-bot-army{
+  height: 120vh;
+  width: 100vw;
+  background-color:#007bff;
+}
+
+.sort-bar{
+  margin-left: 830px;
+  font-size: larger;
+  color: aqua;
+  
+}
+
+/* App.css */
+.your-bot-army {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bot-card-container {
+  display: grid;
+  margin-left: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.h3{
+  color: white;
+}
+
+.moto{
+  background-color: #ccc;
+  align-items: center;
+  font-size: larger;
+}
+
+p{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+
+

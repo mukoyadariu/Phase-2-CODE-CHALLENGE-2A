@@ -1,169 +1,70 @@
-# Phase-2-CODE-CHALLENGE-2A
-# Battle Bot Army Builder
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
+In the project directory, you can run:
 
-Battle Bot Army Builder is a web application that allows users to assemble their own formidable army of battle bots. Users can choose from a variety of bots, each with unique characteristics and abilities, and create their personalized army to conquer battles.
+### `npm start`
 
-## Table of Contents
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- [Description](#description)
-- [Features](#features)
-- [Project Setup](#project-setup)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Backend](#running-the-backend)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [Advanced Features](#advanced-features)
-- [Support](#support)
-- [License](#license)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Description
+### `npm test`
 
-Battle Bot Army Builder is a single-page application built using React and Redux for the frontend and JSON-Server for the backend. The application allows users to view a collection of available bots, enlist them into their army, and release or discharge bots from their service. The backend is powered by JSON-Server and stores bot data in a `db.json` file.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Features
+### `npm run build`
 
-- View profiles of all bots in the `BotCollection`.
-- Enlist individual bots into the user's army in the `YourBotArmy` component.
-- Release bots from the user's army, removing them from the `YourBotArmy`.
-- Discharge a bot permanently by clicking the "x" button, which deletes the bot from both the frontend and backend.
-- Sort bots by health, damage, or armor using the `SortBar` component (Advanced Feature).
-- Filter bots by class (e.g., Support, Medic, Assault) using the `FilterBar` component (Advanced Feature).
-- Enlist only one bot from each bot class (Advanced Feature).
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Project Setup
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Follow these steps to set up the project:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Prerequisites
+### `npm run eject`
 
-- Node.js and npm (Node Package Manager) should be installed on your system.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Installation
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Clone the project repository from GitHub:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```bash
-git clone https://github.com/your-username/battle-bot-army-builder.git
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-2. Change into the project directory:
+## Learn More
 
-```bash
-cd battle-bot-army-builder
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-3. Install the required dependencies:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```bash
-npm install
-```
+### Code Splitting
 
-### Running the Backend
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-The backend uses JSON-Server to simulate a RESTful API. Follow these steps to start the backend server:
+### Analyzing the Bundle Size
 
-1. Create a `db.json` file in the project directory and populate it with the provided bot data (See [Endpoints for Core Deliverables](#endpoints-for-core-deliverables) section).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-2. Start the JSON-Server:
+### Making a Progressive Web App
 
-```bash
-npx json-server --watch db.json --port 8001
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-This will start the JSON-Server and serve the bot data at `http://localhost:8001/bots`.
+### Advanced Configuration
 
-## Usage
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-To run the application, execute the following command in the project directory:
+### Deployment
 
-```bash
-npm start
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-This will start the frontend development server, and the application will be accessible at `http://localhost:3000`.
+### `npm run build` fails to minify
 
-## API Documentation
-
-The application uses JSON-Server as a mock API for the backend. The available endpoints are as follows:
-
-### GET /bots
-
-Retrieves the list of bots.
-
-Example Response:
-
-```json
-[
-  {
-    "id": 101,
-    "name": "wHz-93",
-    "health": 94,
-    "damage": 20,
-    "armor": 63,
-    "bot_class": "Support",
-    "catchphrase": "1010010101001101100011000111101",
-    "avatar_url": "https://robohash.org/nostrumrepellendustenetur.png?size=300x300&set=set1",
-    "created_at": "2018-10-02T19:55:10.800Z",
-    "updated_at": "2018-10-02T19:55:10.800Z"
-  },
-  {
-    "id": 102,
-    "name": "RyM-66",
-    "health": 86,
-    "damage": 36,
-    "armor": 77,
-    "bot_class": "Medic",
-    "catchphrase": "0110011100000100011110100110011000011001",
-    "avatar_url": "https://robohash.org/quidemconsequaturaut.png?size=300x300&set=set1",
-    "created_at": "2018-10-02T19:55:10.827Z",
-    "updated_at": "2018-10-02T19:55:10.827Z"
-  },
-  // ... other bots ...
-]
-```
-
-### DELETE /bots/:id
-
-Deletes the specified bot from the backend.
-
-Example Response:
-
-```json
-{}
-```
-
-## Contributing
-
-We welcome contributions to improve Battle Bot Army Builder! To contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your changes: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -m "Add your commit message here"`.
-4. Push the changes to your fork: `git push origin feature/your-feature-name`.
-5. Submit a pull request to the `main` branch of the original repository.
-
-## Advanced Features
-
-If you have extra time and want to challenge yourself, consider implementing the following advanced features:
-
-- Display a show view (`BotSpecs`) for each bot, allowing users to see detailed information about a bot before enlisting it.
-- Implement sorting functionality for bots based on health, damage, or armor using the `SortBar` component.
-- Allow users to filter bots by their class (e.g., Support, Medic, Assault) using the `FilterBar` component.
-- Restrict users to enlist only one bot from each bot class.
-
-## Support
-
-If you encounter any issues or need assistance with the Battle Bot Army Builder application, please feel free to [create an issue](https://github.com/your-username/battle-bot-army-builder/issues) in the GitHub repository.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/your-username/battle-bot-army-builder/blob/main/LICENSE) file for details.
-
----
-
-Please note that this README template is a starting point, and you should tailor it to your project's specific details. Provide clear instructions for installation, usage, and contribution to help users and contributors effectively interact with your project. Happy coding!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
